@@ -1,13 +1,6 @@
 body {
   font-family: Google Sans, arial, sans-serif;
 }
-.weather-app {
-  max-width: 700px;
-  margin: 30px auto;
-  padding: 20px;
-  border: 1px solid #dadde1;
-  border-radius: 5px;
-}
 h1 {
   margin-bottom: 0;
   color: #202124;
@@ -20,6 +13,14 @@ h1 {
 ul {
   margin: 0;
   padding: 0;
+}
+.weather-app-wrapper {
+  max-width: 700px;
+  margin: 30px auto;
+}
+.weather-app {
+  padding: 20px;
+  border-bottom: 1px solid #dadde1;
 }
 .weather-details {
   list-style: none;
