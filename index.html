@@ -10,7 +10,9 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Weather App</title>
   </head>
   <body>
@@ -26,24 +28,25 @@
                   class="float-left"
                 />
                 <span class="float-left">
-                  <span class="current-temperature">12</span>
+                  <span class="current-temperature" id="current-temperature"
+                    >12</span
+                  >
                   <span class="units">℃ | <a href="#">℉</a></span>
                 </span>
               </div>
             </div>
             <div class="col-3">
               <ul class="weather-details">
-                <li>Precipitation: 0%</li>
-                <li>Humidity: 73%</li>
-                <li>Wind: 2km/h</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span>km/h</li>
               </ul>
             </div>
             <div class="col-5">
               <div class="overview">
-                <h1>Los Angeles, CA, USA</h1>
+                <h1 id="city">New York</h1>
                 <ul class="current-time">
                   <li>Friday 05:00</li>
-                  <li>Clear</li>
+                  <li id="description">Clear</li>
                 </ul>
               </div>
             </div>
