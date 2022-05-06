@@ -10,10 +10,9 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <title>Weather App</title>
+    <title>Vanilla Weather App</title>
   </head>
   <body>
     <div class="container">
@@ -44,10 +43,14 @@
               <div class="clearfix weather-temperature">
                 <img src="" alt="Clear" class="float-left" id="icon" />
                 <span class="float-left">
-                  <span class="current-temperature" id="current-temperature"
-                    >12</span
+                  <span
+                    class="current-temperature"
+                    id="current-temperature"
+                  ></span>
+                  <span class="units"
+                    ><a id="celsius-link" class="active">℃</a> |
+                    <a id="fahrenheit-link">℉</a></span
                   >
-                  <span class="units">℃ | <a href="#">℉</a></span>
                 </span>
               </div>
             </div>
