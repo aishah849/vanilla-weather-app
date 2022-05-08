@@ -53,6 +53,7 @@ function formatDay(timestamp) {
 function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
+  forecast.splice(0, 1);
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
     if (index < 6) {
@@ -128,6 +129,17 @@ function handleSubmit(event) {
   event.preventDefault();
   search(document.querySelector("#city-input").value);
 }
+
+function showPosition(position) {
+  navigator.geolocation.getCurrentPosition(showPosition);
+  let apiKey = "f617fc313f1abac3b9f67f0a1a41e6c4";
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
+  let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+  axios.get(url).then(displayTemperature);
+}
+let currentButton = document.querySelector("#current-button");
+currentButton.addEventListener("click", showPosition);
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();

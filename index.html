@@ -20,7 +20,7 @@
         <div class="weather-app">
           <form id="search-form" class="mb-3">
             <div class="row">
-              <div class="col-10">
+              <div class="col-8">
                 <input
                   type="search"
                   placeholder="Type a city..."
@@ -32,8 +32,16 @@
               <div class="col-2">
                 <input
                   type="submit"
-                  placeholder="Search"
-                  class="btn btn-primary w-100"
+                  value="Search"
+                  class="btn btn-secondary w-100"
+                />
+              </div>
+              <div class="col-2">
+                <input
+                  type="submit"
+                  value="Current"
+                  id="current-button"
+                  class="btn btn-light w-100"
                 />
               </div>
             </div>
@@ -71,6 +79,7 @@
               </div>
             </div>
           </div>
+          <p class="upcoming-forecast">This Week's Forecast</p>
           <div class="weather-forecast" id="forecast">
             <div class="row">
               <div class="col-2">
@@ -89,12 +98,16 @@
           </div>
         </div>
         <small
-          ><a
+          >Open sourced on
+          <a
             href="https://github.com/aishah849/vanilla-weather-app"
             target="_blank"
-            >Open-source code</a
+            >Github</a
           >
-          by Aishah Al-Rashid</small
+          and hosted by
+          <a href="https://euphonious-dasik-739842.netlify.app/" target="_blank"
+            >Netlify</a
+          >. Coding by Aishah Al-Rashid.</small
         >
       </div>
     </div>
