@@ -31,6 +31,11 @@ ul {
   line-height: 16px;
   padding-top: 6px;
 }
+.weather-details .description {
+  font-weight: bolder;
+  text-transform: capitalize;
+  font-size: 15px;
+}
 .current-time {
   list-style: none;
   color: #70757a;
@@ -38,7 +43,6 @@ ul {
   line-height: 20px;
   display: block;
   text-align: right;
-  text-transform: capitalize;
 }
 .weather-temperature .active {
   color: #202124;
