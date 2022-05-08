@@ -69,6 +69,26 @@ ul {
   font-size: 16px;
   line-height: 24px;
   margin-top: 6px;
-  padding-left: 6px;
+  padding: 0;
   vertical-align: top;
+}
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  line-height: 15px;
+}
+.weather-forecast.date {
+  color: #202124;
+  font-size: 16px;
+  padding-top: 7px;
+}
+.weather-forecast-temperatures {
+  font-size: 13px;
+  font-weight: normal;
+}
+.weather-forecast-max {
+  color: #202124;
+}
+.weather-forecast-min {
+  color: #70757a;
 }
